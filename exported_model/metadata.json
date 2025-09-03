@@ -1,0 +1,43 @@
+{
+  "thresholds": {
+    "LogisticRegression": 0.8691674290519971,
+    "KNN": 0.9090909090909091,
+    "RandomForest": 0.6622985893143216,
+    "GradientBoosting": 0.8063805411772643,
+    "Keras": 0.7942297375464239
+  },
+  "feature_order": [
+    "Age",
+    "Gender",
+    "Family History",
+    "Personal History",
+    "Current Stressors",
+    "Symptoms",
+    "Severity",
+    "Impact on Life",
+    "Demographics",
+    "Medical History",
+    "Psychiatric History",
+    "Substance Use",
+    "Coping Mechanisms",
+    "Social Support",
+    "Lifestyle Factors"
+  ],
+  "keras_params": {
+    "hidden_units": [
+      64
+    ],
+    "dropout": 0.35,
+    "l2": 0.0001,
+    "lr": 0.0003,
+    "batch_size": 64,
+    "epochs": 60,
+    "patience": 6,
+    "val_split": 0.2
+  },
+  "calibration": {
+    "type": "platt",
+    "coef": 11.688893344831635,
+    "intercept": -9.13193045705631
+  }
+}
